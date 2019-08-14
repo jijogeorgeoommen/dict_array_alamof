@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		2B8D4AB023031C3500325F63 /* dict_array_alamof.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D4AAE23031C3500325F63 /* dict_array_alamof.xcdatamodeld */; };
 		2B8D4AB223031C3600325F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8D4AB123031C3600325F63 /* Assets.xcassets */; };
 		2B8D4AB523031C3600325F63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8D4AB323031C3600325F63 /* LaunchScreen.storyboard */; };
+		2B8D4ABD23031E0600325F63 /* Result_base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D4ABC23031E0600325F63 /* Result_base.swift */; };
+		2B8D4ABF2303214900325F63 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D4ABE2303214900325F63 /* TableViewCell.swift */; };
+		93FD35628B30AFD15F34CACF /* Pods_dict_array_alamof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4367D77160E8143D706A2F /* Pods_dict_array_alamof.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		2B8D4AB123031C3600325F63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B8D4AB423031C3600325F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B8D4AB623031C3600325F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B8D4ABC23031E0600325F63 /* Result_base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result_base.swift; sourceTree = "<group>"; };
+		2B8D4ABE2303214900325F63 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		34E89D09704141CA3D54B78C /* Pods-dict_array_alamof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dict_array_alamof.release.xcconfig"; path = "Target Support Files/Pods-dict_array_alamof/Pods-dict_array_alamof.release.xcconfig"; sourceTree = "<group>"; };
+		7090EAFA0D547318CBEBF3AB /* Pods-dict_array_alamof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dict_array_alamof.debug.xcconfig"; path = "Target Support Files/Pods-dict_array_alamof/Pods-dict_array_alamof.debug.xcconfig"; sourceTree = "<group>"; };
+		CF4367D77160E8143D706A2F /* Pods_dict_array_alamof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dict_array_alamof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FD35628B30AFD15F34CACF /* Pods_dict_array_alamof.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				2B8D4AA623031C3500325F63 /* dict_array_alamof */,
 				2B8D4AA523031C3500325F63 /* Products */,
+				9FCDD9C52CB66D7131C3523C /* Pods */,
+				BF3D42F84D0B266BB043476C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +68,33 @@
 			isa = PBXGroup;
 			children = (
 				2B8D4AA723031C3500325F63 /* AppDelegate.swift */,
+				2B8D4ABC23031E0600325F63 /* Result_base.swift */,
 				2B8D4AA923031C3500325F63 /* ViewController.swift */,
 				2B8D4AAB23031C3500325F63 /* Main.storyboard */,
+				2B8D4ABE2303214900325F63 /* TableViewCell.swift */,
 				2B8D4AB123031C3600325F63 /* Assets.xcassets */,
 				2B8D4AB323031C3600325F63 /* LaunchScreen.storyboard */,
 				2B8D4AB623031C3600325F63 /* Info.plist */,
 				2B8D4AAE23031C3500325F63 /* dict_array_alamof.xcdatamodeld */,
 			);
 			path = dict_array_alamof;
+			sourceTree = "<group>";
+		};
+		9FCDD9C52CB66D7131C3523C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7090EAFA0D547318CBEBF3AB /* Pods-dict_array_alamof.debug.xcconfig */,
+				34E89D09704141CA3D54B78C /* Pods-dict_array_alamof.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF3D42F84D0B266BB043476C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF4367D77160E8143D706A2F /* Pods_dict_array_alamof.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B8D4AB923031C3600325F63 /* Build configuration list for PBXNativeTarget "dict_array_alamof" */;
 			buildPhases = (
+				3ED92D0269CE2ADA5C5BF526 /* [CP] Check Pods Manifest.lock */,
 				2B8D4AA023031C3500325F63 /* Sources */,
 				2B8D4AA123031C3500325F63 /* Frameworks */,
 				2B8D4AA223031C3500325F63 /* Resources */,
+				7F6CA175E538D459B329A48B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +165,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3ED92D0269CE2ADA5C5BF526 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dict_array_alamof-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F6CA175E538D459B329A48B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dict_array_alamof/Pods-dict_array_alamof-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dict_array_alamof/Pods-dict_array_alamof-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dict_array_alamof/Pods-dict_array_alamof-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B8D4AA023031C3500325F63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B8D4ABF2303214900325F63 /* TableViewCell.swift in Sources */,
 				2B8D4AB023031C3500325F63 /* dict_array_alamof.xcdatamodeld in Sources */,
+				2B8D4ABD23031E0600325F63 /* Result_base.swift in Sources */,
 				2B8D4AAA23031C3500325F63 /* ViewController.swift in Sources */,
 				2B8D4AA823031C3500325F63 /* AppDelegate.swift in Sources */,
 			);
@@ -284,6 +360,7 @@
 		};
 		2B8D4ABA23031C3600325F63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7090EAFA0D547318CBEBF3AB /* Pods-dict_array_alamof.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +379,7 @@
 		};
 		2B8D4ABB23031C3600325F63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34E89D09704141CA3D54B78C /* Pods-dict_array_alamof.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
